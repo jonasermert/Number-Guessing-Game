@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <div>
+                <h1>in how many rounds you think can guess the number?</h1>
+                <div>
+                    <div>
+                        <input type="radio" name="radio" value="4" id="radioFour" onchange="attemptsFunc()" checked>
+                        <label for="4">4</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio" value="5" id="radioFive" onchange="attemptsFunc()">
+                        <label for="5">5</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio" value="6" id="radioSix" onchange="attemptsFunc()">
+                        <label for="6">6</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio" id="custom" onchange="attemptsFunc()">
+                        <label for="custom">custom</label>
+                    </div>
+                </div>
+                <div id="showCustomInput">
+                    <input name="number" type="number" id=customNum>
+                </div>
+                <div id="showAttempts">
+                    <h1>
+                        <span id="attempt"></span> / <span id="attempts"></span>
+                    </h1>
+                </div>
+            </div>
+            <div>
+                <input name="number" type="number" id="numInput">
+                <input type="button" value="guess" onclick="getRechnen()">
+            </div>
+        </form>
+        <div id="addText">
+
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
